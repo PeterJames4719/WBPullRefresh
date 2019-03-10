@@ -22,7 +22,7 @@ pod 'WBPullRefresh'
 
 ## Author
 
-bing, wubing0220@gmail.com
+bing
 
 ## License
 

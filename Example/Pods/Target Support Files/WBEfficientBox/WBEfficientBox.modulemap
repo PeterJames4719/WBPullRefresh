@@ -1,0 +1,6 @@
+framework module WBEfficientBox {
+  umbrella header "WBEfficientBox-umbrella.h"
+
+  export *
+  module * { export * }
+}

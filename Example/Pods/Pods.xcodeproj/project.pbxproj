@@ -1,0 +1,844 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B74B199F5A9FF630EFBD42BDC3C22C8 /* WBPullRefreshFooterView.h in Headers */ = {isa = PBXBuildFile; fileRef = 21B8E7D50DB5C1EEE0E9BA623CBCFADC /* WBPullRefreshFooterView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1182E78511D53F7B8C824CF950FCA2DC /* WBPullRefreshView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BDAA0F778EF0CF3BFF6A136D02BB652 /* WBPullRefreshView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		119D4ACC80250696A2E505D61F4A1C38 /* WBPullRefreshHeaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = A17F7C1F4003CA3D829749997D98D541 /* WBPullRefreshHeaderView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		181BD2DECF0C474EBCE1C4AA3E7276A1 /* UIScrollView+WBPullRefresh.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D9B3FFA67BA6812D51BA997BD452837 /* UIScrollView+WBPullRefresh.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1B7ED0DA8A24A73B672AFEE464D87916 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		1BA1F0220B9F37540672E26E9A370FC8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		2411CCFC12FE396B937CC4CF132A9C80 /* Pods-WBPullRefresh_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E21DB7842D6AC39B0E9B999C479E8B4 /* Pods-WBPullRefresh_Tests-dummy.m */; };
+		258B67DA6C0C95445B38A20C16B1B027 /* WBPullRefreshDefaultContentView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E28F6A22FFEF0D9A1EE3C601BC34780 /* WBPullRefreshDefaultContentView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		25A223EB17060244AE378601F7ACE394 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		3B82F253AA4EEB00FC1346D31FC5EC9B /* WBEfficientBox-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 017DF915C8906F408A07DC5853A99AE3 /* WBEfficientBox-dummy.m */; };
+		3D730058802C7FF8638002874517612B /* WBPullRefreshDefaultTipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4681CB3C5A05463DC92E52A516D59203 /* WBPullRefreshDefaultTipView.m */; };
+		5173A788ED6955E022F70B6752855559 /* WBPullRefreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E39E57253DA30B305D8C7BE55D5C15 /* WBPullRefreshView.m */; };
+		557006332304F8CF2ED891841A77675F /* WBPullRefreshHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FF7824085125FAE228DBEDD7455B084 /* WBPullRefreshHeaderView.m */; };
+		75C5851B58A9772B98CC8D0B539F5D07 /* WBPullRefreshFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 739DA3358A2AC2C583833B60780C4A13 /* WBPullRefreshFooterView.m */; };
+		7663D85384CA71EF73F427B777FFEE61 /* UIView+ wbLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E364C36C1DC36B97E4F474519E805D /* UIView+ wbLayout.m */; };
+		76DF79841F992D564C7195C9D3F4CC6F /* WBPullRefreshDefaultContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = E7073F364C77197C6ED80E8FF5FB900C /* WBPullRefreshDefaultContentView.m */; };
+		8E65AFCEFC843D47DC5044F05BA554F8 /* Pods-WBPullRefresh_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B8FAE41D2E3278BE364FA1335BFBACAE /* Pods-WBPullRefresh_Example-dummy.m */; };
+		96CCE2BE32CB55707A993A59FB1CEB78 /* WBPullRefreshDefaultTipView.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7A50E144356FC2C4DFFAA27EEDFED0 /* WBPullRefreshDefaultTipView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BA185BC11FD36284005681D715220402 /* UIView+wbLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = D096FA4E184B4CE0C119C368B8419595 /* UIView+wbLayout.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C6EC0158F777D506B9CAC4AFB5CACD30 /* WBPullRefresh.h in Headers */ = {isa = PBXBuildFile; fileRef = B8DE0BA1D953FA312C262107F47D01B8 /* WBPullRefresh.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CA3E30EF841E914E1A3EEE5A2D4BA2F8 /* WBPullRefreshCustomProtocols.h in Headers */ = {isa = PBXBuildFile; fileRef = D183D69A6BC0C50ED992CE51135F79B3 /* WBPullRefreshCustomProtocols.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CAC98D08BC2DDC6FA667674CF5E52CB5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		D771F69A3F6AE249D48FBF903AF84D6A /* WBPullRefresh-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBD74A37609D54BCF99071F069DBDD7 /* WBPullRefresh-dummy.m */; };
+		DE2009522001B06D283AC07A39620629 /* UIScrollView+WBPullRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCB6B43C363B1E9DB514EEB4DD6E044 /* UIScrollView+WBPullRefresh.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		17BE016AD76499DFB27BFE1E99E3831D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9E6C0238AB29D7EE907F1B8E3306108;
+			remoteInfo = WBEfficientBox;
+		};
+		269A46C9A1565EDAF44C276A41773A9A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9E6C0238AB29D7EE907F1B8E3306108;
+			remoteInfo = WBEfficientBox;
+		};
+		48CD9A3D7A09B8321023EAEDA99F7E5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 220E35F39727DD5E917A365B0EFD6EAD;
+			remoteInfo = WBPullRefresh;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		017DF915C8906F408A07DC5853A99AE3 /* WBEfficientBox-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WBEfficientBox-dummy.m"; sourceTree = "<group>"; };
+		0FBD74A37609D54BCF99071F069DBDD7 /* WBPullRefresh-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WBPullRefresh-dummy.m"; sourceTree = "<group>"; };
+		1E21DB7842D6AC39B0E9B999C479E8B4 /* Pods-WBPullRefresh_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WBPullRefresh_Tests-dummy.m"; sourceTree = "<group>"; };
+		21B8E7D50DB5C1EEE0E9BA623CBCFADC /* WBPullRefreshFooterView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WBPullRefreshFooterView.h; path = WBPullRefresh/Classes/WBPullRefreshFooterView.h; sourceTree = "<group>"; };
+		2BDD2EE088495F80BAFA513BBD21EE5B /* Pods-WBPullRefresh_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WBPullRefresh_Example-resources.sh"; sourceTree = "<group>"; };
+		2D9B3FFA67BA6812D51BA997BD452837 /* UIScrollView+WBPullRefresh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+WBPullRefresh.h"; path = "WBPullRefresh/Classes/UIScrollView+WBPullRefresh.h"; sourceTree = "<group>"; };
+		2EA70F16F559768098132CBC76904B87 /* libPods-WBPullRefresh_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WBPullRefresh_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		34322EAA631C57EEB236472F053DE1E7 /* Pods-WBPullRefresh_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WBPullRefresh_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		4681CB3C5A05463DC92E52A516D59203 /* WBPullRefreshDefaultTipView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WBPullRefreshDefaultTipView.m; sourceTree = "<group>"; };
+		4BC238CCE7EA95C636208B9C389B65E0 /* Pods-WBPullRefresh_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WBPullRefresh_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		4DCB6B43C363B1E9DB514EEB4DD6E044 /* UIScrollView+WBPullRefresh.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+WBPullRefresh.m"; path = "WBPullRefresh/Classes/UIScrollView+WBPullRefresh.m"; sourceTree = "<group>"; };
+		4FF7824085125FAE228DBEDD7455B084 /* WBPullRefreshHeaderView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WBPullRefreshHeaderView.m; path = WBPullRefresh/Classes/WBPullRefreshHeaderView.m; sourceTree = "<group>"; };
+		5742B9F1CE951A6469B1320726F439AB /* Pods-WBPullRefresh_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WBPullRefresh_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		6013984B40E6F533FF4D89EFDEA11E5C /* libWBEfficientBox.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libWBEfficientBox.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6153AA1988CF82CE86AC0BA67FEC911F /* WBEfficientBox.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WBEfficientBox.xcconfig; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		68436318D4275E4F76F78D394B1FBA90 /* Pods-WBPullRefresh_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WBPullRefresh_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		739DA3358A2AC2C583833B60780C4A13 /* WBPullRefreshFooterView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WBPullRefreshFooterView.m; path = WBPullRefresh/Classes/WBPullRefreshFooterView.m; sourceTree = "<group>"; };
+		7D825E8E533F4AD089939C945F0DBC56 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		82A1A3337056CD0B00D685575C661264 /* WBPullRefresh.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = WBPullRefresh.podspec; sourceTree = "<group>"; };
+		82F8A658679E9DB619212BFAEEB38282 /* Pods-WBPullRefresh_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WBPullRefresh_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		834B650A3076A3E4024EA03D891BAE55 /* Pods-WBPullRefresh_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WBPullRefresh_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		8BDAA0F778EF0CF3BFF6A136D02BB652 /* WBPullRefreshView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WBPullRefreshView.h; path = WBPullRefresh/Classes/WBPullRefreshView.h; sourceTree = "<group>"; };
+		8E28F6A22FFEF0D9A1EE3C601BC34780 /* WBPullRefreshDefaultContentView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WBPullRefreshDefaultContentView.h; sourceTree = "<group>"; };
+		90E39E57253DA30B305D8C7BE55D5C15 /* WBPullRefreshView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WBPullRefreshView.m; path = WBPullRefresh/Classes/WBPullRefreshView.m; sourceTree = "<group>"; };
+		91660136C28611B069B6CD7646570CBE /* WBEfficientBox-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WBEfficientBox-prefix.pch"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A17F7C1F4003CA3D829749997D98D541 /* WBPullRefreshHeaderView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WBPullRefreshHeaderView.h; path = WBPullRefresh/Classes/WBPullRefreshHeaderView.h; sourceTree = "<group>"; };
+		AA5D1A46D236C038782C646E6AB3B190 /* libPods-WBPullRefresh_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WBPullRefresh_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA7A50E144356FC2C4DFFAA27EEDFED0 /* WBPullRefreshDefaultTipView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WBPullRefreshDefaultTipView.h; sourceTree = "<group>"; };
+		B5E364C36C1DC36B97E4F474519E805D /* UIView+ wbLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+ wbLayout.m"; path = "WBEfficientBox/Classes/UIView+ wbLayout.m"; sourceTree = "<group>"; };
+		B8DE0BA1D953FA312C262107F47D01B8 /* WBPullRefresh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WBPullRefresh.h; path = WBPullRefresh/Classes/WBPullRefresh.h; sourceTree = "<group>"; };
+		B8FAE41D2E3278BE364FA1335BFBACAE /* Pods-WBPullRefresh_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WBPullRefresh_Example-dummy.m"; sourceTree = "<group>"; };
+		C9A350A8E37300E59B1A8DD3BA1799BF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CEA4DD6BCA66584E0D8332C12EBA0482 /* Pods-WBPullRefresh_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WBPullRefresh_Example.release.xcconfig"; sourceTree = "<group>"; };
+		D096FA4E184B4CE0C119C368B8419595 /* UIView+wbLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+wbLayout.h"; path = "WBEfficientBox/Classes/UIView+wbLayout.h"; sourceTree = "<group>"; };
+		D183D69A6BC0C50ED992CE51135F79B3 /* WBPullRefreshCustomProtocols.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WBPullRefreshCustomProtocols.h; path = WBPullRefresh/Classes/WBPullRefreshCustomProtocols.h; sourceTree = "<group>"; };
+		D2C919ACEF4ACC82B1EFA8AC04375070 /* Pods-WBPullRefresh_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WBPullRefresh_Example-frameworks.sh"; sourceTree = "<group>"; };
+		D460CB6D1C143A958465C2371BFCDDFD /* libWBPullRefresh.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libWBPullRefresh.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE478A5504E8AFA2B93D610E4542F1C7 /* WBPullRefresh-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WBPullRefresh-prefix.pch"; sourceTree = "<group>"; };
+		DEFB86F81BDB7B9C739527A83AB79C4C /* WBPullRefresh.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WBPullRefresh.xcconfig; sourceTree = "<group>"; };
+		E7073F364C77197C6ED80E8FF5FB900C /* WBPullRefreshDefaultContentView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WBPullRefreshDefaultContentView.m; sourceTree = "<group>"; };
+		EA03E816A40C69E1C5C997B56360C25A /* Pods-WBPullRefresh_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WBPullRefresh_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		FC6D40A4F5856580522DFDB3C1718121 /* Pods-WBPullRefresh_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WBPullRefresh_Tests-resources.sh"; sourceTree = "<group>"; };
+		FE2A7B557BEE7979A04EB61C34321FB6 /* Pods-WBPullRefresh_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WBPullRefresh_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0238036A4F6641F104AA408B8B2A439E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BA1F0220B9F37540672E26E9A370FC8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E9E9CA09E9D44C3A4F0F064B1452859 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25A223EB17060244AE378601F7ACE394 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D9A52341EB6550F4B4CCCA69DECA6A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B7ED0DA8A24A73B672AFEE464D87916 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE345BB0EDE4C0D936CA05B052C94069 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAC98D08BC2DDC6FA667674CF5E52CB5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01096B3C1208FEB3C7200C924D11AB60 /* WBPullRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				B8DE0BA1D953FA312C262107F47D01B8 /* WBPullRefresh.h */,
+				2D9B3FFA67BA6812D51BA997BD452837 /* UIScrollView+WBPullRefresh.h */,
+				4DCB6B43C363B1E9DB514EEB4DD6E044 /* UIScrollView+WBPullRefresh.m */,
+				D183D69A6BC0C50ED992CE51135F79B3 /* WBPullRefreshCustomProtocols.h */,
+				21B8E7D50DB5C1EEE0E9BA623CBCFADC /* WBPullRefreshFooterView.h */,
+				739DA3358A2AC2C583833B60780C4A13 /* WBPullRefreshFooterView.m */,
+				A17F7C1F4003CA3D829749997D98D541 /* WBPullRefreshHeaderView.h */,
+				4FF7824085125FAE228DBEDD7455B084 /* WBPullRefreshHeaderView.m */,
+				8BDAA0F778EF0CF3BFF6A136D02BB652 /* WBPullRefreshView.h */,
+				90E39E57253DA30B305D8C7BE55D5C15 /* WBPullRefreshView.m */,
+				CC052FC9DE07403D94844435466C16E1 /* Default */,
+				BD8DCC2351DA8D2F436A833778C976F8 /* Pod */,
+				407913985C0FA21C6D8CC842E5E2A4A4 /* Support Files */,
+			);
+			name = WBPullRefresh;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		1380042B469E4F8FF3118B1D545709A5 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				91C325837AD7CA2F9DDC7E5C474AEAD7 /* Pods-WBPullRefresh_Example */,
+				334A8A998CB7CBA64F03D18DD23451A5 /* Pods-WBPullRefresh_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		334A8A998CB7CBA64F03D18DD23451A5 /* Pods-WBPullRefresh_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				68436318D4275E4F76F78D394B1FBA90 /* Pods-WBPullRefresh_Tests-acknowledgements.markdown */,
+				4BC238CCE7EA95C636208B9C389B65E0 /* Pods-WBPullRefresh_Tests-acknowledgements.plist */,
+				1E21DB7842D6AC39B0E9B999C479E8B4 /* Pods-WBPullRefresh_Tests-dummy.m */,
+				34322EAA631C57EEB236472F053DE1E7 /* Pods-WBPullRefresh_Tests-frameworks.sh */,
+				FC6D40A4F5856580522DFDB3C1718121 /* Pods-WBPullRefresh_Tests-resources.sh */,
+				834B650A3076A3E4024EA03D891BAE55 /* Pods-WBPullRefresh_Tests.debug.xcconfig */,
+				EA03E816A40C69E1C5C997B56360C25A /* Pods-WBPullRefresh_Tests.release.xcconfig */,
+			);
+			name = "Pods-WBPullRefresh_Tests";
+			path = "Target Support Files/Pods-WBPullRefresh_Tests";
+			sourceTree = "<group>";
+		};
+		407913985C0FA21C6D8CC842E5E2A4A4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DEFB86F81BDB7B9C739527A83AB79C4C /* WBPullRefresh.xcconfig */,
+				0FBD74A37609D54BCF99071F069DBDD7 /* WBPullRefresh-dummy.m */,
+				DE478A5504E8AFA2B93D610E4542F1C7 /* WBPullRefresh-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/WBPullRefresh";
+			sourceTree = "<group>";
+		};
+		598D9111CD4091D9812694DF47F1D5F7 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				01096B3C1208FEB3C7200C924D11AB60 /* WBPullRefresh */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				598D9111CD4091D9812694DF47F1D5F7 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				DDC26DA0FAC5D54FA67F9A8D025E85D3 /* Pods */,
+				A37728B312E07C23B09EE298CA936B1F /* Products */,
+				1380042B469E4F8FF3118B1D545709A5 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		91C325837AD7CA2F9DDC7E5C474AEAD7 /* Pods-WBPullRefresh_Example */ = {
+			isa = PBXGroup;
+			children = (
+				FE2A7B557BEE7979A04EB61C34321FB6 /* Pods-WBPullRefresh_Example-acknowledgements.markdown */,
+				82F8A658679E9DB619212BFAEEB38282 /* Pods-WBPullRefresh_Example-acknowledgements.plist */,
+				B8FAE41D2E3278BE364FA1335BFBACAE /* Pods-WBPullRefresh_Example-dummy.m */,
+				D2C919ACEF4ACC82B1EFA8AC04375070 /* Pods-WBPullRefresh_Example-frameworks.sh */,
+				2BDD2EE088495F80BAFA513BBD21EE5B /* Pods-WBPullRefresh_Example-resources.sh */,
+				5742B9F1CE951A6469B1320726F439AB /* Pods-WBPullRefresh_Example.debug.xcconfig */,
+				CEA4DD6BCA66584E0D8332C12EBA0482 /* Pods-WBPullRefresh_Example.release.xcconfig */,
+			);
+			name = "Pods-WBPullRefresh_Example";
+			path = "Target Support Files/Pods-WBPullRefresh_Example";
+			sourceTree = "<group>";
+		};
+		94E97D1D2F3A87D07368535F319F7AE0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6153AA1988CF82CE86AC0BA67FEC911F /* WBEfficientBox.xcconfig */,
+				017DF915C8906F408A07DC5853A99AE3 /* WBEfficientBox-dummy.m */,
+				91660136C28611B069B6CD7646570CBE /* WBEfficientBox-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/WBEfficientBox";
+			sourceTree = "<group>";
+		};
+		A37728B312E07C23B09EE298CA936B1F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA5D1A46D236C038782C646E6AB3B190 /* libPods-WBPullRefresh_Example.a */,
+				2EA70F16F559768098132CBC76904B87 /* libPods-WBPullRefresh_Tests.a */,
+				6013984B40E6F533FF4D89EFDEA11E5C /* libWBEfficientBox.a */,
+				D460CB6D1C143A958465C2371BFCDDFD /* libWBPullRefresh.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B7BB19A862EAD1F46576DFF751CB2C4E /* WBEfficientBox */ = {
+			isa = PBXGroup;
+			children = (
+				B5E364C36C1DC36B97E4F474519E805D /* UIView+ wbLayout.m */,
+				D096FA4E184B4CE0C119C368B8419595 /* UIView+wbLayout.h */,
+				94E97D1D2F3A87D07368535F319F7AE0 /* Support Files */,
+			);
+			path = WBEfficientBox;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD8DCC2351DA8D2F436A833778C976F8 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				7D825E8E533F4AD089939C945F0DBC56 /* LICENSE */,
+				C9A350A8E37300E59B1A8DD3BA1799BF /* README.md */,
+				82A1A3337056CD0B00D685575C661264 /* WBPullRefresh.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		CC052FC9DE07403D94844435466C16E1 /* Default */ = {
+			isa = PBXGroup;
+			children = (
+				8E28F6A22FFEF0D9A1EE3C601BC34780 /* WBPullRefreshDefaultContentView.h */,
+				E7073F364C77197C6ED80E8FF5FB900C /* WBPullRefreshDefaultContentView.m */,
+				AA7A50E144356FC2C4DFFAA27EEDFED0 /* WBPullRefreshDefaultTipView.h */,
+				4681CB3C5A05463DC92E52A516D59203 /* WBPullRefreshDefaultTipView.m */,
+			);
+			name = Default;
+			path = WBPullRefresh/Classes/Default;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		DDC26DA0FAC5D54FA67F9A8D025E85D3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B7BB19A862EAD1F46576DFF751CB2C4E /* WBEfficientBox */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		22689A6F54BDE4256C73AF41494DF1C6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				181BD2DECF0C474EBCE1C4AA3E7276A1 /* UIScrollView+WBPullRefresh.h in Headers */,
+				C6EC0158F777D506B9CAC4AFB5CACD30 /* WBPullRefresh.h in Headers */,
+				CA3E30EF841E914E1A3EEE5A2D4BA2F8 /* WBPullRefreshCustomProtocols.h in Headers */,
+				258B67DA6C0C95445B38A20C16B1B027 /* WBPullRefreshDefaultContentView.h in Headers */,
+				96CCE2BE32CB55707A993A59FB1CEB78 /* WBPullRefreshDefaultTipView.h in Headers */,
+				0B74B199F5A9FF630EFBD42BDC3C22C8 /* WBPullRefreshFooterView.h in Headers */,
+				119D4ACC80250696A2E505D61F4A1C38 /* WBPullRefreshHeaderView.h in Headers */,
+				1182E78511D53F7B8C824CF950FCA2DC /* WBPullRefreshView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA55D5FFF971DFEB4FD0B4B181087AB8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA185BC11FD36284005681D715220402 /* UIView+wbLayout.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		220E35F39727DD5E917A365B0EFD6EAD /* WBPullRefresh */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07E1DFAC544071703957B928010C89CC /* Build configuration list for PBXNativeTarget "WBPullRefresh" */;
+			buildPhases = (
+				541B331E200F2A8EA460591515075173 /* Sources */,
+				1E9E9CA09E9D44C3A4F0F064B1452859 /* Frameworks */,
+				22689A6F54BDE4256C73AF41494DF1C6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				19BBCE21A72EE8997101EB8E58460DFF /* PBXTargetDependency */,
+			);
+			name = WBPullRefresh;
+			productName = WBPullRefresh;
+			productReference = D460CB6D1C143A958465C2371BFCDDFD /* libWBPullRefresh.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D9E6C0238AB29D7EE907F1B8E3306108 /* WBEfficientBox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8D18F5FFDD663C51C8C565091551025 /* Build configuration list for PBXNativeTarget "WBEfficientBox" */;
+			buildPhases = (
+				967D03F3EC9269003604BA258843645F /* Sources */,
+				5D9A52341EB6550F4B4CCCA69DECA6A3 /* Frameworks */,
+				DA55D5FFF971DFEB4FD0B4B181087AB8 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WBEfficientBox;
+			productName = WBEfficientBox;
+			productReference = 6013984B40E6F533FF4D89EFDEA11E5C /* libWBEfficientBox.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		DD548E4910657C37B319B6CAE2232E35 /* Pods-WBPullRefresh_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6FDA5B190BB6D147B015C4C3DD24DDA /* Build configuration list for PBXNativeTarget "Pods-WBPullRefresh_Example" */;
+			buildPhases = (
+				E6F93C94D93DB7F4D9D647BC88A3E781 /* Sources */,
+				DE345BB0EDE4C0D936CA05B052C94069 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD501C0E1BF8EED814678837D5D0872A /* PBXTargetDependency */,
+				5A402A151712D7197BF9D4EDFFE36C6D /* PBXTargetDependency */,
+			);
+			name = "Pods-WBPullRefresh_Example";
+			productName = "Pods-WBPullRefresh_Example";
+			productReference = AA5D1A46D236C038782C646E6AB3B190 /* libPods-WBPullRefresh_Example.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		ED5FDBA7A71AF8BF055FDD3713F63A4D /* Pods-WBPullRefresh_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B28F224D1388E8ABDE1BAB72F6F406CB /* Build configuration list for PBXNativeTarget "Pods-WBPullRefresh_Tests" */;
+			buildPhases = (
+				65636DD2B21F41C8587912427C894B55 /* Sources */,
+				0238036A4F6641F104AA408B8B2A439E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-WBPullRefresh_Tests";
+			productName = "Pods-WBPullRefresh_Tests";
+			productReference = 2EA70F16F559768098132CBC76904B87 /* libPods-WBPullRefresh_Tests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = A37728B312E07C23B09EE298CA936B1F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD548E4910657C37B319B6CAE2232E35 /* Pods-WBPullRefresh_Example */,
+				ED5FDBA7A71AF8BF055FDD3713F63A4D /* Pods-WBPullRefresh_Tests */,
+				D9E6C0238AB29D7EE907F1B8E3306108 /* WBEfficientBox */,
+				220E35F39727DD5E917A365B0EFD6EAD /* WBPullRefresh */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		541B331E200F2A8EA460591515075173 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE2009522001B06D283AC07A39620629 /* UIScrollView+WBPullRefresh.m in Sources */,
+				D771F69A3F6AE249D48FBF903AF84D6A /* WBPullRefresh-dummy.m in Sources */,
+				76DF79841F992D564C7195C9D3F4CC6F /* WBPullRefreshDefaultContentView.m in Sources */,
+				3D730058802C7FF8638002874517612B /* WBPullRefreshDefaultTipView.m in Sources */,
+				75C5851B58A9772B98CC8D0B539F5D07 /* WBPullRefreshFooterView.m in Sources */,
+				557006332304F8CF2ED891841A77675F /* WBPullRefreshHeaderView.m in Sources */,
+				5173A788ED6955E022F70B6752855559 /* WBPullRefreshView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65636DD2B21F41C8587912427C894B55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2411CCFC12FE396B937CC4CF132A9C80 /* Pods-WBPullRefresh_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		967D03F3EC9269003604BA258843645F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7663D85384CA71EF73F427B777FFEE61 /* UIView+ wbLayout.m in Sources */,
+				3B82F253AA4EEB00FC1346D31FC5EC9B /* WBEfficientBox-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6F93C94D93DB7F4D9D647BC88A3E781 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E65AFCEFC843D47DC5044F05BA554F8 /* Pods-WBPullRefresh_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		19BBCE21A72EE8997101EB8E58460DFF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WBEfficientBox;
+			target = D9E6C0238AB29D7EE907F1B8E3306108 /* WBEfficientBox */;
+			targetProxy = 17BE016AD76499DFB27BFE1E99E3831D /* PBXContainerItemProxy */;
+		};
+		5A402A151712D7197BF9D4EDFFE36C6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WBPullRefresh;
+			target = 220E35F39727DD5E917A365B0EFD6EAD /* WBPullRefresh */;
+			targetProxy = 48CD9A3D7A09B8321023EAEDA99F7E5B /* PBXContainerItemProxy */;
+		};
+		FD501C0E1BF8EED814678837D5D0872A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WBEfficientBox;
+			target = D9E6C0238AB29D7EE907F1B8E3306108 /* WBEfficientBox */;
+			targetProxy = 269A46C9A1565EDAF44C276A41773A9A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0850036E67E44EF7A1C7C4DD2DBE240B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEFB86F81BDB7B9C739527A83AB79C4C /* WBPullRefresh.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/WBPullRefresh/WBPullRefresh-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		23A98C1F8B8B2FD12EBF873DC52531E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 834B650A3076A3E4024EA03D891BAE55 /* Pods-WBPullRefresh_Tests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		280168BD102466DCD07C2C8A73CF6386 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEFB86F81BDB7B9C739527A83AB79C4C /* WBPullRefresh.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/WBPullRefresh/WBPullRefresh-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9470B519DD9F28B7F8E54670E1119BF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5742B9F1CE951A6469B1320726F439AB /* Pods-WBPullRefresh_Example.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C3E37FB098AE76440E29106ADBF00CEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		DA03565BE765DB55C6448FB363A44481 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		E14346FA96A1DD5650387B789F3D11B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA03E816A40C69E1C5C997B56360C25A /* Pods-WBPullRefresh_Tests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E2D9A34F341F44B919A6C024EC1B8357 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEA4DD6BCA66584E0D8332C12EBA0482 /* Pods-WBPullRefresh_Example.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EADF2B89D7A29D436CA64FE5465E3490 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6153AA1988CF82CE86AC0BA67FEC911F /* WBEfficientBox.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/WBEfficientBox/WBEfficientBox-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FEBFEB3C1C526A1AE47CBCDEE67A1EE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6153AA1988CF82CE86AC0BA67FEC911F /* WBEfficientBox.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/WBEfficientBox/WBEfficientBox-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07E1DFAC544071703957B928010C89CC /* Build configuration list for PBXNativeTarget "WBPullRefresh" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				280168BD102466DCD07C2C8A73CF6386 /* Debug */,
+				0850036E67E44EF7A1C7C4DD2DBE240B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3E37FB098AE76440E29106ADBF00CEB /* Debug */,
+				DA03565BE765DB55C6448FB363A44481 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B28F224D1388E8ABDE1BAB72F6F406CB /* Build configuration list for PBXNativeTarget "Pods-WBPullRefresh_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23A98C1F8B8B2FD12EBF873DC52531E1 /* Debug */,
+				E14346FA96A1DD5650387B789F3D11B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6FDA5B190BB6D147B015C4C3DD24DDA /* Build configuration list for PBXNativeTarget "Pods-WBPullRefresh_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9470B519DD9F28B7F8E54670E1119BF9 /* Debug */,
+				E2D9A34F341F44B919A6C024EC1B8357 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8D18F5FFDD663C51C8C565091551025 /* Build configuration list for PBXNativeTarget "WBEfficientBox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EADF2B89D7A29D436CA64FE5465E3490 /* Debug */,
+				FEBFEB3C1C526A1AE47CBCDEE67A1EE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

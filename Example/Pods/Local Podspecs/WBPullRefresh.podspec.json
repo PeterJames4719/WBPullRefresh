@@ -1,0 +1,27 @@
+{
+  "name": "WBPullRefresh",
+  "version": "0.1.0",
+  "summary": "A short description of WBPullRefresh.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/bing/WBPullRefresh",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "bing": "wubing0220@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/bing/WBPullRefresh.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "WBPullRefresh/Classes/**/*",
+  "dependencies": {
+    "WBEfficientBox": [
+
+    ]
+  }
+}

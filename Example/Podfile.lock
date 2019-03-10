@@ -1,0 +1,19 @@
+PODS:
+  - WBEfficientBox (1.0)
+  - WBPullRefresh (0.1.0):
+    - WBEfficientBox
+
+DEPENDENCIES:
+  - WBPullRefresh (from `../`)
+
+EXTERNAL SOURCES:
+  WBPullRefresh:
+    :path: ../
+
+SPEC CHECKSUMS:
+  WBEfficientBox: 4346337e63082e8f8926e1e5c9d802c807afe95b
+  WBPullRefresh: 4496aef1833b3a216b9d3dc4f83404b4cc651bfa
+
+PODFILE CHECKSUM: dd2dfd6d91e2c051e44d764fdac593096060f12f
+
+COCOAPODS: 1.4.0

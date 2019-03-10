@@ -1,0 +1,6 @@
+framework module WBPullRefresh {
+  umbrella header "WBPullRefresh-umbrella.h"
+
+  export *
+  module * { export * }
+}
