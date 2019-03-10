@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+A pull refresh lib that you can customize animations yourself.Users can fully implemente refresh content view or tip view, and customize animation for them.
                        DESC
 
   s.homepage         = 'https://github.com/PeterJames4719/WBPullRefresh'
