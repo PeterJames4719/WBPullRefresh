@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WBPullRefresh'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'A pull refresh lib that you can customize animations yourself'
 
 # This description is used to generate tags and improve search results.
@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/bing/WBPullRefresh'
+  s.homepage         = 'https://github.com/PeterJames4719/WBPullRefresh'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'bing' => 'wubing0220@gmail.com' }
-  s.source           = { :git => 'https://github.com/bing/WBPullRefresh.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/PeterJames4719/WBPullRefresh.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
