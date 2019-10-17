@@ -11,8 +11,9 @@
 
 @interface WBPullRefreshDefaultTipView : UIView <WBPullRefreshTipViewProtocol>
 @property (nonatomic, strong) UILabel *textLabel;
+@property (nonatomic, strong) NSArray<UIColor *> *colors;
 @property (nonatomic, assign) CGFloat appearAnimationDuration;
 @property (nonatomic, assign) CGFloat disappearAnimationDuration;
 
-+ (instancetype)tipViewWithText:(NSString *)tip;
++ (instancetype)tipViewWithText:(NSString *)tip colors:(NSArray<UIColor *> *)colors;
 @end

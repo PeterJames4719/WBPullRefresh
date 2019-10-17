@@ -14,8 +14,9 @@
 
 @implementation WBPullRefreshDefaultTipView
 
-+ (instancetype)tipViewWithText:(NSString *)tip {
++ (instancetype)tipViewWithText:(NSString *)tip colors:(NSArray<UIColor *> *)colors {
     WBPullRefreshDefaultTipView *tipView = [[WBPullRefreshDefaultTipView alloc] initWithFrame:CGRectMake(0, 0, 0, 30)];
+    tipView.colors = colors;
     tipView.appearAnimationDuration = 0.25;
     tipView.disappearAnimationDuration = 0.25;
     tipView.textLabel.text = tip;
@@ -36,15 +37,30 @@
 }
 
 - (void)drawRect:(CGRect)rect {
-    CGContextRef context = UIGraphicsGetCurrentContext();
-    CGColorSpaceRef RGBColorSpace=CGColorSpaceCreateDeviceRGB();
-    CGFloat colors[]={  254/255.0,81/255.0,0/255.0,1.0,
-        254/255.0,121/255.0,0.0,1.0};
-    CGGradientRef gradient=CGGradientCreateWithColorComponents(RGBColorSpace, colors, NULL, 2);
-    CGColorSpaceRelease(RGBColorSpace);
-    CGPoint startPoint=CGPointMake(0, 20);
-    CGPoint endPoint=CGPointMake(self.width, 20);
-    CGContextDrawLinearGradient(context, gradient, startPoint, endPoint, kCGGradientDrawsAfterEndLocation);
+    if (self.colors.count == 1) {
+        UIColor *color = [self.colors firstObject];
+        if ([color isKindOfClass:[UIColor class]]) {
+            self.backgroundColor =color;
+        }
+        return;
+    } else {
+        
+        NSInteger count = self.colors.count;
+        CGFloat c[count * 4];
+        for (UIColor *color in self.colors) {
+            NSInteger index = [self.colors indexOfObject:color];
+            [color getRed:(c+index*4+0) green:(c+index*4+1) blue:(c+index*4+2) alpha:(c+index*4+3)];
+        }
+
+        CGContextRef context = UIGraphicsGetCurrentContext();
+        CGColorSpaceRef RGBColorSpace=CGColorSpaceCreateDeviceRGB();
+        CGGradientRef gradient=CGGradientCreateWithColorComponents(RGBColorSpace, c, NULL, count);
+        CGColorSpaceRelease(RGBColorSpace);
+        CGPoint startPoint=CGPointMake(0, self.height / 2.0);
+        CGPoint endPoint=CGPointMake(self.width, self.height / 2.0);
+        CGContextDrawLinearGradient(context, gradient, startPoint, endPoint, kCGGradientDrawsAfterEndLocation);
+    }
+    
 }
 
 #pragma mark - WBPullRefreshTipViewProtocol

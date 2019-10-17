@@ -41,9 +41,9 @@
     __weak typeof(self) weakSelf = self;
     headerView.tipViewBlock = ^UIView *{
         // 自定义效果
-        return [CustomTipView tipViewWithText:@"推荐了10条更新"];
+        //return [CustomTipView tipViewWithText:@"推荐了10条更新"];
         // 默认效果
-        //return [WBPullRefreshDefaultTipView tipViewWithText:@"推荐了10条更新"];
+        return [WBPullRefreshDefaultTipView tipViewWithText:@"推荐了10条更新" colors:@[[UIColor redColor], [UIColor blueColor], [UIColor orangeColor]]];
     };
     
     __weak typeof(headerView) weakHeader = headerView;
