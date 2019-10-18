@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WBPullRefresh'
-  s.version          = '1.0.3'
+  s.version          = '1.0.4'
   s.summary          = 'A pull refresh lib that you can customize animations yourself'
 
 # This description is used to generate tags and improve search results.
