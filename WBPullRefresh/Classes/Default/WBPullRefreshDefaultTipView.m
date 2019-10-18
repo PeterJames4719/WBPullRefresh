@@ -14,13 +14,29 @@
 
 @implementation WBPullRefreshDefaultTipView
 
-+ (instancetype)tipViewWithText:(NSString *)tip colors:(NSArray<UIColor *> *)colors {
++ (instancetype)tipViewWithText:(NSString *)tip bgColors:(NSArray<UIColor *> *)colors {
+    return [self tipViewWithText:tip textColor:[UIColor whiteColor] textFont:[UIFont systemFontOfSize:13] bgColors:colors];
+}
+
++ (instancetype)tipViewWithText:(NSString *)tip textColor:(UIColor *)textColor textFont:(UIFont *)font bgColors:(NSArray<UIColor *> *)colors {
     WBPullRefreshDefaultTipView *tipView = [[WBPullRefreshDefaultTipView alloc] initWithFrame:CGRectMake(0, 0, 0, 30)];
-    tipView.colors = colors;
     tipView.appearAnimationDuration = 0.25;
     tipView.disappearAnimationDuration = 0.25;
     tipView.textLabel.text = tip;
+    tipView.textLabel.font = font;
+    tipView.textLabel.textColor = textColor;
+    tipView.colors = colors;
     return tipView;
+}
+
+- (void)setColors:(NSArray<UIColor *> *)colors {
+    if (_colors != colors) {
+        _colors = colors;
+        if (colors.count == 1) {
+            self.backgroundColor = [colors firstObject];
+        }
+        [self setNeedsDisplay];
+    }
 }
 
 - (UILabel *)textLabel {
@@ -37,21 +53,15 @@
 }
 
 - (void)drawRect:(CGRect)rect {
-    if (self.colors.count == 1) {
-        UIColor *color = [self.colors firstObject];
-        if ([color isKindOfClass:[UIColor class]]) {
-            self.backgroundColor =color;
-        }
-        return;
-    } else {
-        
+    [super drawRect:rect];
+    if (self.colors.count >= 2) {
         NSInteger count = self.colors.count;
         CGFloat c[count * 4];
         for (UIColor *color in self.colors) {
             NSInteger index = [self.colors indexOfObject:color];
             [color getRed:(c+index*4+0) green:(c+index*4+1) blue:(c+index*4+2) alpha:(c+index*4+3)];
         }
-
+        
         CGContextRef context = UIGraphicsGetCurrentContext();
         CGColorSpaceRef RGBColorSpace=CGColorSpaceCreateDeviceRGB();
         CGGradientRef gradient=CGGradientCreateWithColorComponents(RGBColorSpace, c, NULL, count);
@@ -60,7 +70,6 @@
         CGPoint endPoint=CGPointMake(self.width, self.height / 2.0);
         CGContextDrawLinearGradient(context, gradient, startPoint, endPoint, kCGGradientDrawsAfterEndLocation);
     }
-    
 }
 
 #pragma mark - WBPullRefreshTipViewProtocol

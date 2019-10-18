@@ -43,7 +43,7 @@
         // 自定义效果
         //return [CustomTipView tipViewWithText:@"推荐了10条更新"];
         // 默认效果
-        return [WBPullRefreshDefaultTipView tipViewWithText:@"推荐了10条更新" colors:@[[UIColor redColor], [UIColor blueColor], [UIColor orangeColor]]];
+        return [WBPullRefreshDefaultTipView tipViewWithText:@"推荐了10条更新" textColor:[UIColor redColor] textFont:[UIFont systemFontOfSize:18] bgColors:@[[UIColor greenColor]]];
     };
     
     __weak typeof(headerView) weakHeader = headerView;

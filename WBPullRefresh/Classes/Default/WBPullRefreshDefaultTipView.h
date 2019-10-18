@@ -15,5 +15,6 @@
 @property (nonatomic, assign) CGFloat appearAnimationDuration;
 @property (nonatomic, assign) CGFloat disappearAnimationDuration;
 
-+ (instancetype)tipViewWithText:(NSString *)tip colors:(NSArray<UIColor *> *)colors;
++ (instancetype)tipViewWithText:(NSString *)tip bgColors:(NSArray<UIColor *> *)colors;
++ (instancetype)tipViewWithText:(NSString *)tip textColor:(UIColor *)textColor textFont:(UIFont *)font bgColors:(NSArray<UIColor *> *)colors;
 @end
